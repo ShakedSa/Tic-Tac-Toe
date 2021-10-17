@@ -65,6 +65,7 @@ function minimax(newBoard, player) {
 }
 
 function emptySpots(board) {
+    // Searching for empty spots in the board, returning new array of empty spots.
     return board.filter(spot => typeof spot === 'number');
 }
 

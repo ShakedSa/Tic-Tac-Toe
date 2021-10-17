@@ -8,6 +8,7 @@ const initialState = {
     turn: true,
     cells: []
 }
+// Context of the entire app.
 export const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState);
     // Single Player Logic: 

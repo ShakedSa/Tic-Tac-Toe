@@ -1,6 +1,7 @@
 const reducer = (state, action) => {
     switch (action.type) {
         case 'START_GAME':
+            // Getting the board, and setting the state.
             const cells = document.querySelectorAll('.cell');
             return { ...state, players: action.payload, cells, turn: true };
         case 'TURN':
